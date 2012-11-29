@@ -1,0 +1,11 @@
+
+
+<form action='.' method='post'>
+{% csrf_token %}
+    <table>
+    {% for form in forms %}
+        {{ form.as_table }}
+    {% endfor %}
+    </table>
+<button type="subbmit" value="Register">Register</button>
+</form>
